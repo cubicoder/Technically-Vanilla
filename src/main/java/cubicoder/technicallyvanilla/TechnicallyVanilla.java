@@ -26,7 +26,7 @@ public class TechnicallyVanilla {
 	};
 	
 	public TechnicallyVanilla() {
-		LOGGER.info("constructing " + MODID);
+		LOGGER.info("constructingtest " + MODID);
 		
 		IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 		
