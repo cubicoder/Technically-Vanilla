@@ -13,7 +13,7 @@ public class BlockTagGens extends BlockTagsProvider {
 
 	@Override
 	protected void registerTags() {
-		this.func_240522_a_(ModTags.Blocks.STORAGE_BLOCKS_STEEL).func_240532_a_(ModBlocks.STEEL_BLOCK.get());
+		this.getOrCreateBuilder(ModTags.Blocks.STORAGE_BLOCKS_STEEL).add(ModBlocks.STEEL_BLOCK.get());
 	}
 	
 }

@@ -15,10 +15,10 @@ public class ItemTagGens extends ItemTagsProvider {
 
 	@Override
 	protected void registerTags() {
-		this.func_240522_a_(Tags.Items.INGOTS).func_240534_a_(ModItems.STEEL_INGOT.get());
-		this.func_240522_a_(ModTags.Items.INGOTS_STEEL).func_240534_a_(ModItems.STEEL_INGOT.get());
-		
-		this.func_240521_a_(ModTags.Blocks.STORAGE_BLOCKS_STEEL, ModTags.Items.STORAGE_BLOCKS_STEEL);
+		this.copy(ModTags.Blocks.STORAGE_BLOCKS_STEEL, ModTags.Items.STORAGE_BLOCKS_STEEL);
+
+		this.getOrCreateBuilder(Tags.Items.INGOTS).add(ModItems.STEEL_INGOT.get());
+		this.getOrCreateBuilder(ModTags.Items.INGOTS_STEEL).add(ModItems.STEEL_INGOT.get());
 	}
 	
 }
